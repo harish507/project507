@@ -1,0 +1,57 @@
+
+
+
+page-about {
+ 
+  .hea{
+    
+       background-image: url('../assets/imgs/bg.jpg');
+       background-repeat:no-repeat;
+       background-size:cover;
+      // background-color: rgb(51, 255, 187);
+      // border-radius:2px;        
+      // border:blue;
+
+  }
+  .toolbar-background {
+   background-color: rgba(255, 166, 77, 0.158);
+background:transparent;
+   //color:energized;
+   border-color:blue;
+   border-radius:0px;
+   color:gold;
+   font-family: Lucida Handwriting;
+  //border-bottom-radius:20px;
+ }
+ .card1{
+   border:3px solid goldenrod;
+   background:transparent;
+  // border-bottom:5px solid black;
+   border-radius:15px;
+   padding-left: 8px;
+   padding-right: 8px;
+   }
+
+ h2{
+   font-size: 10px;
+   font-family: Lucida Handwriting;
+   color:azure;
+ }
+ h4,h5{
+  font-family: Lucida Handwriting;
+  font-size: 15px;
+ }
+ h4{
+  font-family: Lucida Handwriting;
+  font-size: 25px;
+ }
+ .border{
+  border-radius:20px;
+  padding-left: 5px;
+  background-color:rgba(0, 0, 0, 0.5);
+  outline:none;
+  border:none;
+
+ }
+//}
+}

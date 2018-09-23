@@ -1,0 +1,102 @@
+<ion-header>
+  <ion-navbar no-border-bottom>
+    <ion-title text-center>
+     <h4 style="color:goldenrod;font-family:lucida handwriting;font-size:120%;margin-left:8px;">Contact Us</h4>
+    </ion-title>  
+</ion-navbar>
+  
+  <ion-toolbar no-border-top>
+    <ion-segment [(ngModel)]="items">
+      <ion-segment-button value="contact" >
+       <h5 style="margin-left:3px">ContactPeople</h5>
+      </ion-segment-button>
+      <ion-segment-button value="feedback">
+       <h5 style="margin-left:50px">Feedback</h5>
+      </ion-segment-button>
+     </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="background">
+  <ion-card-content class="card">
+  <div [ngSwitch]="items">
+    <ion-list *ngSwitchCase="'contact'">
+
+      <ion-item class="css" no-lines>
+        <ion-thumbnail item-start>
+          <img  class="img" src="assets/imgs/hari.jpg">
+        </ion-thumbnail>
+        <h2 >Hari<br>harishbali@gmail.com<br>9642119304</h2>
+      </ion-item><br>
+
+      <ion-item class="css" no-lines>
+        <ion-thumbnail item-start>
+          <img class="img" src="assets/imgs/koti.jpeg">
+        </ion-thumbnail>
+        <h2>koti<br>koti@gmail.com<br>8596966363</h2>
+      </ion-item><br>
+
+      <ion-item class="css" no-lines>
+        <ion-thumbnail item-start>
+          <img  class="img" src="assets/imgs/prasad.jpg">
+        </ion-thumbnail>
+        <h2 >Prasad<br>prasad@gmail.com<br>7036945434</h2>
+      </ion-item><br>
+
+      <ion-item class="css" no-lines>
+        <ion-thumbnail item-start>
+          <img class="img"  src="assets/imgs/IMG_20171214_213918(1).jpg">
+        </ion-thumbnail>
+        <h2>priya_riya<br>priyankachinnu.156@gmail.com<br>7997257339</h2>
+      </ion-item><br>
+
+
+      <ion-item class="css" no-lines>
+        <ion-thumbnail item-start>
+          <img class="img" src="assets/imgs/lavanya.jpg">
+        </ion-thumbnail>
+        <h2>Lavanya<br>lavanyadevi999@gmail.com<br>9876543210</h2>
+      </ion-item><br>
+
+      <ion-item class="css" no-lines>
+        <ion-thumbnail item-start>
+          <img  class="img" src="assets/imgs/saheena.jpg">
+        </ion-thumbnail>
+        <h2 text-bottom>saheena<br>saheehasee786@gmail.com<br>9988657889</h2>
+      </ion-item><br>
+
+      <ion-item class="css" no-lines>
+        <ion-thumbnail item-start>
+          <img  class="img" src="assets/imgs/sai.jpg">
+        </ion-thumbnail>
+        <h2>Sai<br>saikanchupati143@gmail.com<br>8977770400</h2>
+      </ion-item><br>
+
+
+      <ion-item class="css" no-lines>
+        <ion-thumbnail item-start>
+          <img class="img" src="assets/imgs/sathish.jpg">
+        </ion-thumbnail>
+        <h2>Sathish<br>geddada.sdsatish10796@gmail.com<br>9553636515</h2>
+      </ion-item><br>
+
+      <ion-item class="css" no-lines>
+        <ion-thumbnail item-start>
+          <img class="img"  src="assets/imgs/blur.jpg">
+        </ion-thumbnail>
+        <h2>nikhil<br>mahapatronikhilkumar@gmail.com<br>9836762980</h2>
+      </ion-item><br>
+
+    </ion-list>
+  
+    <ion-list *ngSwitchCase="'feedback'">
+      <h5 style="color:azure">Please Enter Your feedback</h5>
+          <ion-item class="css" no-lines>
+              <ion-input type="text" placeholder="FeedBack" style="width:300px;height:300px;border-radius:15px;">FeedBack</ion-input>
+        </ion-item><br><br>
+        <button ion-button round (click)="buttonClick()" style="margin-left:50px;width:200px;">submit</button>
+      </ion-list>
+      </div>
+  </ion-card-content>
+      </ion-content>
+      

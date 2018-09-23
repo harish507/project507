@@ -1,0 +1,55 @@
+<ion-header>
+  <ion-navbar color="dark">
+    <ion-title>
+      Scanner Page
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+ 
+<ion-content padding class="head">
+    <ion-list no-lines>
+        
+          <!-- <form [formGroup]="slideOneForm" (ngSubmit)=save()>
+        
+               <ion-item>
+                   <ion-label floating>First Name</ion-label>
+                   <ion-input formControlName="firstName" type="text"></ion-input>
+               </ion-item>
+        
+               <ion-item>
+                   <ion-label floating>Last Name</ion-label>
+                   <ion-input formControlName="lastName" type="text"></ion-input>
+               </ion-item>
+        
+               <ion-item>
+                   <ion-label floating>Age</ion-label>
+                   <ion-input formControlName="age" type="number"></ion-input>
+               </ion-item>
+               <ion-item>
+                 <button ion-button type="submit">submit</button>
+               </ion-item>
+               
+
+           </form>-->
+        
+       </ion-list>
+  <!--<ion-item>
+  <!-- <ion-input type="text" placeholder="" [(ngModel)]="qrData">
+    </ion-input>
+  </ion-item>-->
+  <!--<button ion-button full icon-left (click)="createCode()"><ion-icon name="barcode"></ion-icon>Create Code</button>-->
+  <button ion-button full icon-left (click)="scanCode()" color="secondary"><ion-icon name="qr-scanner"></ion-icon>Scan Code</button>
+ 
+ <!-- <ion-card *ngIf="createdCode">
+    <ngx-qrcode [qrc-value]="createdCode"></ngx-qrcode>
+    <ion-card-content>
+     <!-- <p>Value: {{ createdCode }}</p>
+    </ion-card-content>
+  </ion-card>-->
+ 
+  <ion-card *ngIf="scannedCode">
+    <ion-card-content>
+      Result from Scan: {{ scannedCode }}
+    </ion-card-content>
+  </ion-card>
+</ion-content>

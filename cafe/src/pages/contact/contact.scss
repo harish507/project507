@@ -1,0 +1,30 @@
+page-contact {
+    
+    .background {
+        background-image: url('../assets/imgs/bg.jpg');
+        background-size:cover;
+    }
+    .toolbar-background {
+        background-color: rgba(255, 166, 77, 0.158);
+        //color:energized;
+        border-color:blue;
+        border-radius:20px;
+        color:gold;
+    }
+    .card{
+        border:3px solid goldenrod;
+       // border-bottom:5px solid black;
+        border-radius:15px;
+      }   
+      .img{
+          border-radius:50%;
+      }    
+      .css{
+        border-radius:20px;
+        padding-left: 5px;
+        background-color:rgba(0, 0, 0, 0.5);
+        outline:none;
+        border:none;
+        color:azure;
+      }
+}

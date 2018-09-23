@@ -1,0 +1,51 @@
+<ion-content class="background">
+  <ion-navbar color="dark">
+      <ion-title>Registration</ion-title>
+    </ion-navbar>
+<ion-card style="margin-top:0%">
+  <ion-card-header>
+    Register Form
+  </ion-card-header>
+  <ion-card-content>
+    <form [formGroup]="myForm">
+    <ion-list no-line>
+      <ion-item>
+        <ion-input type="text"  [(ngModel)]="formdata.username" name="username" formControlName="username" placeholder="Username" ></ion-input>
+      </ion-item>
+
+      <div *ngIf="!myForm.controls.username.valid  && (submitAttempt)">
+          <p class="error">Please enter a valid username.</p>
+      </div>
+
+      <ion-item>
+        <ion-input type="password"  [(ngModel)]="formdata.password" name="password" formControlName="password" placeholder="Password" ></ion-input>
+      </ion-item>
+
+      <div *ngIf="!myForm.controls.password.valid  && (submitAttempt)">
+          <p class="error">Please enter a valid Password.</p>
+      </div>
+
+      <ion-item>
+        <ion-input type="email"  [(ngModel)]="formdata.email" name="email" formControlName="email" placeholder="Email" ></ion-input>
+      </ion-item>
+
+      <div *ngIf="!myForm.controls.email.valid  && (submitAttempt)">
+          <p>Please enter a valid email.</p>
+      </div>
+
+      <ion-item>
+        <ion-input type="text"   [(ngModel)]="formdata.phone" name="phone" formControlName="phone" placeholder="phone" ></ion-input>
+      </ion-item>
+
+      <div *ngIf="!myForm.controls.phone.valid  && (submitAttempt)">
+          <p>Please enter a valid phonee number.</p>
+      </div>
+     
+      <button ion-button block outline color="light" (click)="register()">Register</button>
+        
+    </ion-list>
+    </form>
+  </ion-card-content>
+</ion-card>
+
+</ion-content>

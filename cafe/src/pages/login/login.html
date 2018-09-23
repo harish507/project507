@@ -1,0 +1,23 @@
+<ion-content class="background">
+    <ion-navbar class="l">
+      </ion-navbar>
+	<ion-card style="margin-top:0%">
+		<ion-card-header>
+			Admin Login Form
+		</ion-card-header>
+		<ion-card-content>
+		
+			<ion-list no-line>
+				<ion-item>
+					<ion-input type="text" placeholder="Username" name="username"></ion-input>
+				</ion-item>
+				<ion-item>
+					<ion-input type="password" placeholder="Password" name="password"></ion-input>
+				</ion-item>
+				<button ion-button block outline color="light" (click)='getLogin()'>Log in</button>
+					</ion-list>
+			
+		</ion-card-content>
+	</ion-card>
+	<button class="bottom" ion-button clear full color="light" style="margin-bottom: 5%" (click)="reg()">Don't have an account? Sign up</button>
+</ion-content>

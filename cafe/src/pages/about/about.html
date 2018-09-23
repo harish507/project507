@@ -1,0 +1,177 @@
+<ion-header>
+  <ion-navbar text-center>
+    <h4 style="color:goldenrod;font-family:lucida handwriting;font-size:180%;">Weekly Specials</h4>
+  </ion-navbar>
+
+  <ion-toolbar >  
+    <ion-segment [(ngModel)]="items" color="dark">
+      <ion-segment-button  value="Breakfast">
+      <h5 style="color:dodgerblue;font-size:150%;">Breakfast</h5>
+      </ion-segment-button>
+      <ion-segment-button value="Lunch">
+       <h5 style="color:dodgerblue;font-size:150%;">Lunch</h5>
+      </ion-segment-button>
+      <ion-segment-button value="Dinner">
+       <h5 style="color:dodgerblue;font-size:150%;">Dinner</h5>
+      </ion-segment-button>
+    </ion-segment>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content class="hea" >
+ <ion-card-content class="card1">
+       <div [ngSwitch]="items" >
+    <ion-list *ngSwitchCase="'Breakfast'" class="mon">
+      <ion-item class="border" no-lines>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/1.jpg" style="border-radius:50%">
+        </ion-thumbnail>
+        <h2>Poori</h2><h2 text-right>Monday</h2>
+      </ion-item><br>
+      <ion-item class="border" no-lines>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/2.jpg" style="border-radius:50%">
+        </ion-thumbnail>
+        <h2>Vada</h2><h2 text-right>Tuesday</h2>
+      </ion-item><br>
+      <ion-item class="border" no-lines>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/3.jpg" style="border-radius:50%">
+        </ion-thumbnail>
+        <h2>Dosa</h2><h2 text-right>Wednesday</h2>
+      </ion-item><br>
+      <ion-item class="border" no-lines>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/4.jpg" style="border-radius:50%">
+        </ion-thumbnail>
+        <h2>SemyaUpma</h2><h2 text-right>Thursday</h2>
+      </ion-item><br>
+      <ion-item class="border" no-lines>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/6.jpg" style="border-radius:50%">
+        </ion-thumbnail>
+        <h2 text-bottom>idly</h2><h2 text-right>Friday</h2>
+      </ion-item><br>
+
+      <ion-item class="border" no-lines> 
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/5.jpg" style="border-radius:50%">
+        </ion-thumbnail>
+        <h2>Upma</h2><h2 text-right>Saturday</h2>
+      </ion-item><br>
+      <ion-item class="border" no-lines>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/7.jpg" style="border-radius:50%">
+        </ion-thumbnail>
+        <h2>FriedRice</h2><h2 text-right>Sunday</h2>
+      </ion-item><br>
+
+    </ion-list >
+
+    <ion-list *ngSwitchCase="'Lunch'" class="mon">
+      <ion-item class="border" no-lines>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/9.jpg" style="border-radius:50%">
+        </ion-thumbnail>
+        <h2>PotatoCurry</h2><h2 text-right>Monday</h2>
+      </ion-item><br>
+      <ion-item class="border" no-lines>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/10.jpg" style="border-radius:50%">
+        </ion-thumbnail>
+        <h2>PaneerCurry</h2><h2 text-right>Tuesday</h2>
+          </ion-item><br>
+          
+      <ion-item class="border" no-lines>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/11.jpg" style="border-radius:50%">
+        </ion-thumbnail>
+        <h2>DrumstickCurry</h2><h2 text-right>Wednesday</h2>
+          </ion-item><br>
+
+      <ion-item class="border" no-lines>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/12.jpg" style="border-radius:50%">
+        </ion-thumbnail>
+        <h2>BeansCurry</h2><h2 text-right>Thursday</h2>
+          </ion-item><br>
+      <ion-item class="border" no-lines>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/13.jpg" style="border-radius:50%">
+        </ion-thumbnail>
+        <h2>CabbageCurry</h2><h2 text-right>Friday</h2>
+     </ion-item><br>
+
+     <ion-item class="border" no-lines>
+      <ion-thumbnail item-start>
+        <img src="assets/imgs/14.jpg" style="border-radius:50%">
+      </ion-thumbnail>
+      <h2>BrinjalCurry</h2><h2 text-right>Saturday</h2>
+   </ion-item> <br>
+
+   <ion-item class="border" no-lines>
+    <ion-thumbnail item-start>
+      <img src="assets/imgs/15.jpg" style="border-radius:50%">
+    </ion-thumbnail>
+    <h2>PrawnsCurry</h2><h2 text-right>Sunday</h2>
+ </ion-item><br>
+              
+    </ion-list>
+
+    <ion-list *ngSwitchCase="'Dinner'" class="mon">
+      <ion-item class="border" no-lines>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/16.jpg" style="border-radius:50%">
+        </ion-thumbnail>
+        <h2>MushroomCurry</h2><h2 text-right>Monday</h2>
+        </ion-item><br>
+
+         <ion-item class="border" no-lines>
+          <ion-thumbnail item-start>
+            <img src="assets/imgs/17.jpg" style="border-radius:50%">
+          </ion-thumbnail>
+          <h2>GobiCurry</h2><h2 text-right>Tuesday</h2>
+       </ion-item><br>
+
+      <ion-item class="border" no-lines>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/18.jpg" style="border-radius:50%">
+        </ion-thumbnail>
+        <h2>Punukulukurma</h2><h2 text-right>Wednesday</h2>
+      </ion-item><br>
+
+      <ion-item class="border" no-lines>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/20.jpg" style="border-radius:50%">
+        </ion-thumbnail>
+        <h2>CarrotCurry</h2><h2 text-right>Thursday</h2>
+      </ion-item><br>
+
+      <ion-item class="border" no-lines>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/8.jpg" style="border-radius:50%">
+        </ion-thumbnail>
+        <h2>BabyCornCurry</h2><h2 text-right>Friday</h2>
+      </ion-item><br>
+
+      <ion-item class="border" no-lines>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/21.jpg" style="border-radius:50%">
+        </ion-thumbnail>
+        <h2>GreenPeasCurry</h2><h2 text-right>Saturday</h2>
+      </ion-item><br>
+
+      <ion-item class="border" no-lines>
+        <ion-thumbnail item-start>
+          <img src="assets/imgs/22.jpg" style="border-radius:50%">
+        </ion-thumbnail>
+        <h2>ChickenCurry</h2><h2 text-right>Sunday</h2>
+      </ion-item><br>
+
+    </ion-list>
+    
+      </div>
+  
+  </ion-card-content>
+</ion-content>

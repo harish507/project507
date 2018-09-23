@@ -1,0 +1,57 @@
+page-adduser  {
+    .background{
+        background-image: url("../assets/imgs/bg.jpg");
+        background-size: cover;
+        background-repeat:no-repeat;
+    }
+    .lav{
+
+        background:transparent;
+        margin-right:30px;
+        border-radius:15px;
+            transform:translate(5%,20%);
+           //margin-bottom: 30px;
+   }
+
+  .lav1{
+   background:transparent;
+   margin-right:20px;
+ margin-right: 20px;
+
+
+}
+.lav2{
+
+    background: transparent;
+  // margin-right:30px;
+    color:azure;    
+     outline:none;
+    border-color:azure;
+ 
+ }
+ .error{
+    background:transparent;    
+    color: red;
+    outline: none;
+    border: none;
+   // margin-left:20px;
+    font-size:17px;
+
+
+ }
+ .lav3{
+
+    width:70%;
+    border-radius:15px;
+    color:black;
+    font-size:20px;
+   margin-left:60px;
+   margin-right:60px;
+    background-color:white;
+ }
+.l{
+    opacity:0.2;
+}
+}
+
+

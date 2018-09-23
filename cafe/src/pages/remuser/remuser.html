@@ -1,0 +1,23 @@
+<ion-header>
+	<ion-navbar color="dark">
+<ion-title>Delete User</ion-title>
+	</ion-navbar>
+</ion-header>
+<ion-content class="background">
+  <ion-card style="margin-top: 30%">
+	<ion-card-header>
+	  User deletion
+	</ion-card-header>
+	<ion-card-content>
+	  <ion-list no-line>
+		<ion-item>
+		  <ion-input type="text" [(ngModel)]='username' placeholder="Username"></ion-input>
+		</ion-item>
+		
+		<button ion-button block outline color="light" (click)="delete()">Delete</button>
+		  
+	  </ion-list>
+	</ion-card-content>
+  </ion-card>
+  
+  </ion-content>
